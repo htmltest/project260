@@ -62,7 +62,7 @@ $(window).on('load resize scroll', function() {
         $('.landing-harvest-how-mobile').addClass('fixed');
         var desktopStart = $('.landing-harvest-how-mobile').offset().top;
         var blockHeight = $('.landing-harvest-how-mobile-inner').height();
-        var desktopStop = $('#landing-harvest-lifestyle').offset().top - blockHeight;
+        var desktopStop = $('#landing-harvest-lifestyle').offset().top - blockHeight * 2;
         var desktopStep = (windowScroll - desktopStart) / (desktopStop - desktopStart);
         if (desktopStep >= 0.25) {
             $('.landing-harvest-how-mobile-item').eq(1).addClass('active');

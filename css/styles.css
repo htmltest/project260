@@ -98,7 +98,7 @@
 
 @media (max-width:1219px) {
     .landing-harvest-how-desktop {display:none}
-    .landing-harvest-how-mobile {display:block; margin:0; height:800vh; position:relative}
+    .landing-harvest-how-mobile {display:block; height:800vh; position:relative}
     #landing-harvest-how .landing-harvest-how-mobile .landing-harvest-title {display:block; position:absolute; left:50%; top:20px; width:300px; margin:0 0 0 -150px; pointer-events:none; z-index:2}
     .landing-harvest-how-mobile-inner {position:relative; height:100vh}
     .landing-harvest-how-mobile.fixed .landing-harvest-how-mobile-inner {position:fixed; left:0; top:0; right:0}
@@ -138,7 +138,6 @@
 .landing-harvest-lifestyle-text-inner::before {content:""; position:absolute; left:23px; top:50px; width:574px; height:469px; background:url(../img/landing-harvest-lifestyle-text.svg) no-repeat; background-size:100%}
 
 @media (max-width:1219px) {
-    #landing-harvest-lifestyle {padding:80px 0 0 0}
     #landing-harvest-lifestyle::before {width:996px; height:543px; top:0; margin:0 0 0 -498px}
     .landing-harvest-lifestyle-text {margin:20px 0 0 0; font-size:16px}
     .landing-harvest-lifestyle-content {margin:20px auto 0 auto; padding:28px 0 0 0; width:280px; height:477px; border-radius:4px 4px 0 0}
