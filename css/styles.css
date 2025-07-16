@@ -1,0 +1,214 @@
+.landing-harvest-wrapper,
+.landing-harvest-wrapper *,
+.landing-harvest-wrapper *::before,
+.landing-harvest-wrapper *::after {outline:none; box-sizing:border-box; font-family:MetronicPro, sans-serif; font-weight:normal; letter-spacing:0}
+
+.landing-harvest-wrapper {background:#041C32 url(../img/landing-harvest-bg.png) no-repeat center top; position:relative; overflow:hidden; width:100%; padding:0 0 120px 0}
+
+@media (max-width:1219px) {
+    .landing-harvest-wrapper {padding:0 0 80px 0; background-image:url(../img/landing-harvest-bg-mobile.png)}
+}
+
+.landing-harvest-container {margin:0 auto; width:100%; max-width:1220px}
+
+@media (max-width:1219px) {
+    .landing-harvest-container {padding:0 10px}
+}
+
+.landing-harvest-welcome {padding:40px 40px 0 40px}
+.landing-harvest-welcome-inner {max-width:1840px; margin:0 auto; height:800px; display:flex; align-items:center; background:url(../img/landing-harvest-welcome.jpg) no-repeat center; background-size:auto 100%; border-radius:24px}
+.landing-harvest-welcome-logo {width:354px; position:relative}
+.landing-harvest-welcome-logo img {display:block; width:100%}
+.landing-harvest-welcome-text {margin:36px 0 0 0; font-size:24px; line-height:1.2em; color:#FFFFFF}
+.landing-harvest-welcome-link {display:flex; margin:36px 0 0 0}
+.landing-harvest-welcome-link a {display:block; padding:15px 20px; font-size:18px; line-height:1em; color:#FFFFFF; text-decoration:none; background:#0180C9; border-radius:5px; transition:background 0.2s}
+@media (min-width:1220px) {
+    .landing-harvest-welcome-link a:hover {background:#003B61; color:#FFFFFF}
+}
+
+@media (max-width:1219px) {
+    .landing-harvest-welcome {padding:10px 10px 0 10px}
+    .landing-harvest-welcome-inner {max-width:none; height:600px; align-items:stretch; background-image:url(../img/landing-harvest-welcome-mobile.jpg); border-radius:12px; padding:20px 0 10px 0}
+    .landing-harvest-welcome-inner .landing-harvest-container {position:relative}
+    .landing-harvest-welcome-logo {width:170px; margin:0 auto}
+    .landing-harvest-welcome-text {margin:20px 0 0 0; font-size:16px; line-height:1.2em; text-align:center}
+    .landing-harvest-welcome-link {margin:0; position:absolute; left:10px; bottom:0; right:10px; display:block}
+    .landing-harvest-welcome-link a {padding:14px 0; border:1px solid #FFFFFF; background:transparent; text-align:center}
+}
+
+.landing-harvest-menu {margin:20px 0 0 0; display:flex; align-items:center; justify-content:center; font-weight:300; font-size:24px; line-height:1.4em}
+.landing-harvest-menu a {color:rgba(255, 255, 255, 0.5); transition:color 0.2s; text-decoration:none}
+@media (min-width:1220px) {
+    .landing-harvest-menu a:hover {color:#FFFFFF}
+}
+.landing-harvest-menu span {min-width:1px; max-width:1px; height:34px; background:rgba(255, 255, 255, 0.5); margin:0 30px}
+
+@media (max-width:1219px) {
+    .landing-harvest-menu {display:none}
+}
+
+.landing-harvest-title {text-align:center; font-weight:600; font-size:48px; line-height:1.3em; color:#FFFFFF; position:relative}
+.landing-harvest-title img {display:inline-block; vertical-align:middle; width:52px; height:52px; margin:-2px 20px 0 20px; border-radius:50%; box-shadow:0px 0px 40px #FFAE00}
+
+@media (max-width:1219px) {
+    .landing-harvest-title {font-size:24px}
+    .landing-harvest-title img {width:34px; height:34px; margin:-2px 10px 0 10px}
+}
+
+.landing-harvest-section {margin:120px 0 0 0}
+.landing-harvest-menu+.landing-harvest-section {margin:80px 0 0 0}
+
+@media (max-width:1219px) {
+    .landing-harvest-section {margin:80px 0 0 0}
+}
+
+.landing-harvest-about-text {text-align:center; margin:40px 0 0 0; font-size:24px; line-height:1.4em; color:#FFFFFF}
+.landing-harvest-about-video {margin:40px 0 0 0; height:640px; position:relative; overflow:hidden; border-radius:12px}
+.landing-harvest-about-video-play {position:absolute; left:0; top:0; right:0; bottom:0; display:flex; align-items:center; justify-content:center; background:url(../img/landing-harvest-about.jpg) no-repeat center; background-size:cover}
+.landing-harvest-about-video-play svg {width:200px; height:200px; fill:rgba(255, 255, 255, 0.5); transition:fill 0.2s}
+@media (min-width:1220px) {
+    .landing-harvest-about-video-play:hover svg {fill:#FFFFFF}
+}
+.landing-harvest-about-video video {position:absolute; left:0; top:0; width:100%; height:100%; border-radius:12px}
+
+@media (max-width:1219px) {
+    .landing-harvest-about-text {margin:20px 0 0 0; font-size:16px}
+    .landing-harvest-about-video {margin:20px 0 0 0; height:300px}
+    .landing-harvest-about-video-play svg {width:100px; height:100px}
+}
+
+.landing-harvest-how-desktop {height:400vh}
+.landing-harvest-how-desktop-inner {position:relative; height:642px}
+.landing-harvest-how-desktop.fixed .landing-harvest-how-desktop-inner {position:fixed; left:50%; top:0; width:1220px; margin:0 0 0 -610px}
+.scrolled .landing-harvest-how-desktop.fixed .landing-harvest-how-desktop-inner {top:144px}
+.landing-harvest-how-desktop-container {margin:40px 0 0 0; height:520px; background:#02182D; border:1px solid rgba(255, 255, 255, 0.1); border-radius:16px; overflow:hidden; position:relative; text-align:center}
+.landing-harvest-how-desktop-item {position:absolute; left:0; top:0; right:0; bottom:0; transition:opacity 1s; opacity:0}
+.landing-harvest-how-desktop-item.active {opacity:1}
+.landing-harvest-how-desktop-item-bg {position:absolute; left:50%; top:179px; width:914px; margin:0 0 0 -457px}
+.landing-harvest-how-desktop-item-bg img {display:block; width:100%}
+.landing-harvest-how-desktop-item-title {position:relative; font-size:30px; line-height:1.3em; display:flex; align-items:center; justify-content:center}
+.landing-harvest-how-desktop-item-title img {min-width:40px; max-width:40px; margin:0 20px 0 0}
+.landing-harvest-how-desktop-item-text {position:relative; margin:20px 0 0 0; font-size:20px; line-height:1.4em; color:#FFFFFF}
+.landing-harvest-how-desktop-night {color:#FFFFFF; padding:50px 0 0 0}
+.landing-harvest-how-desktop-night::before {content:""; position:absolute; left:15px; top:35px; right:15px; height:345px; background:url(../img/landing-harvest-how-night-bg.svg) no-repeat; background-size:100%}
+.landing-harvest-how-desktop-morning {background:rgba(1, 128, 201, 0.2); color:#0180C9; padding:20px 0 0 0}
+.landing-harvest-how-desktop-afternoon {background:rgba(4, 211, 129, 0.2); color:#039255; padding:20px 0 0 0}
+.landing-harvest-how-desktop-evening {background:rgba(212, 18, 0, 0.2); color:#D41200; padding:20px 0 0 0}
+.landing-harvest-how-mobile {display:none}
+
+@media (max-width:1219px) {
+    .landing-harvest-how-desktop {display:none}
+    .landing-harvest-how-mobile {display:block; margin:0; height:800vh; position:relative}
+    #landing-harvest-how .landing-harvest-how-mobile .landing-harvest-title {display:block; position:absolute; left:50%; top:20px; width:300px; margin:0 0 0 -150px; pointer-events:none; z-index:2}
+    .landing-harvest-how-mobile-inner {position:relative; height:100vh}
+    .landing-harvest-how-mobile.fixed .landing-harvest-how-mobile-inner {position:fixed; left:0; top:0; right:0}
+    .scrolled .landing-harvest-how-mobile.fixed .landing-harvest-how-mobile-inner {top:144px}
+    .landing-harvest-how-mobile-item {position:absolute; left:0; top:0; right:0; height:100vh; padding:112px 10px 0 10px; color:#FFFFFF; text-align:center; opacity:0; transition:opacity 1s, transform 1s; transform:translateY(100vh)}
+    .landing-harvest-how-mobile-item.active {opacity:1; transform:translateY(0)}
+    .landing-harvest-how-mobile-item-morning {background:#033050}
+    .landing-harvest-how-mobile-item-afternoon {background:#194232}
+    .landing-harvest-how-mobile-item-evening {background:#421B18}
+    .landing-harvest-how-mobile-item-night {background:#041C32}
+    .landing-harvest-how-mobile-title {font-size:20px; line-height:1.3em; width:280px; margin:0 auto}
+    .landing-harvest-how-mobile-item-bg {width:280px; margin:20px auto 0 auto}
+    .landing-harvest-how-mobile-item-bg img {display:block; width:100%}
+    .landing-harvest-how-mobile-text {width:280px; margin:20px auto 0 auto; font-size:16px; line-height:1.4em; color:rgba(255, 255, 255, 0.8); min-height:96px}
+    .landing-harvest-how-mobile-icon {width:30px; margin:0 auto}
+    .landing-harvest-how-mobile-icon img {display:block; width:100%}
+    .landing-harvest-how-mobile-light {margin:15px 0 0 0; font-size:12px; line-height:1.3em; letter-spacing:0.1em; text-transform:uppercase}
+    .landing-harvest-how-mobile-item-morning .landing-harvest-how-mobile-light {color:#0180C9}
+    .landing-harvest-how-mobile-item-afternoon .landing-harvest-how-mobile-light {color:#039255}
+    .landing-harvest-how-mobile-item-evening .landing-harvest-how-mobile-light {color:#D41200}
+    .landing-harvest-how-mobile-item-night .landing-harvest-how-mobile-light {color:rgba(255, 255, 255, 0.4)}
+    .landing-harvest-how-cursor {position:absolute; left:50%; bottom:174px; width:40px; margin:0 0 0 -20px; pointer-events:none; z-index:2}
+    .landing-harvest-how-cursor img {display:block; width:100%}
+    .landing-harvest-how-mobile-step {position:absolute; bottom:120px; left:0; right:0; color:rgba(255, 255, 255, 0.4); font-size:16px; line-height:1.4em; text-align:center}
+    .landing-harvest-how-mobile-step span {font-size:24px; color:rgba(255, 255, 255, 0.8)}
+}
+
+#landing-harvest-lifestyle {position:relative}
+#landing-harvest-lifestyle::before {content:""; position:absolute; left:50%; top:-120px; width:1920px; height:1047px; margin:0 0 0 -960px; background:url(../img/landing-lifestyle.jpg) no-repeat; background-size:100%}
+.landing-harvest-lifestyle-text {position:relative; margin:20px auto 0 auto; max-width:871px; text-align:center; font-size:24px; line-height:1.4em; color:#FFFFFF}
+.landing-harvest-lifestyle-content {position:relative; margin:40px auto 0 auto; padding:78px 0 0 0; width:800px; height:839px; border-radius:16px 16px 0 0; background:linear-gradient(180deg, rgba(4, 28, 50, 0) 40.73%, #041C32 94.58%), linear-gradient(218.7deg, #D9D9D9 0%, #737373 103.35%)}
+.landing-harvest-lifestyle-beko {width:113px; margin:0 auto}
+.landing-harvest-lifestyle-beko img {display:block; width:100%}
+.landing-harvest-lifestyle-screen {width:200px; margin:40px auto 0 auto}
+.landing-harvest-lifestyle-screen img {display:block; width:100%}
+.landing-harvest-lifestyle-text-inner {width:671px; margin:40px auto 0 auto; height:523px; background:url(../img/landing-harvest-lifestyle-bg.png) no-repeat; background-size:100%; position:relative}
+.landing-harvest-lifestyle-text-inner::before {content:""; position:absolute; left:23px; top:50px; width:574px; height:469px; background:url(../img/landing-harvest-lifestyle-text.svg) no-repeat; background-size:100%}
+
+@media (max-width:1219px) {
+    #landing-harvest-lifestyle {padding:80px 0 0 0}
+    #landing-harvest-lifestyle::before {width:996px; height:543px; top:0; margin:0 0 0 -498px}
+    .landing-harvest-lifestyle-text {margin:20px 0 0 0; font-size:16px}
+    .landing-harvest-lifestyle-content {margin:20px auto 0 auto; padding:28px 0 0 0; width:280px; height:477px; border-radius:4px 4px 0 0}
+    .landing-harvest-lifestyle-beko {width:39px}
+    .landing-harvest-lifestyle-screen {width:69px; margin:14px auto 0 auto}
+    .landing-harvest-lifestyle-text-inner {width:263px; margin:8px auto 0 auto; height:375px; background-image:url(../img/landing-harvest-lifestyle-bg-mobile.png)}
+    .landing-harvest-lifestyle-text-inner::before {left:5px; top:0; width:253px; height:351px; background-image:url(../img/landing-harvest-lifestyle-text-mobile.svg)}
+}
+
+.landing-harvest-catalogue-beko {width:128px; margin:0 auto 40px auto}
+.landing-harvest-catalogue-beko img {display:block; width:100%}
+.landing-harvest-catalogue-list {margin:40px -10px 0 -10px; position:relative}
+.landing-harvest-catalogue-list .swiper-slide {min-width:33.33%; max-width:33.33%}
+.landing-harvest-catalogue-item {display:block; margin:0 10px; background:#FFFFFF; border:1px solid #D9D9D9; border-radius:12px; padding:20px 40px; text-align:center; text-decoration:none}
+.landing-harvest-catalogue-preview {height:317px; display:flex; align-items:center; justify-content:center}
+.landing-harvest-catalogue-preview img {max-width:100%; max-height:100%}
+.landing-harvest-catalogue-title {margin:20px 0 0 0; text-align:center; color:#041C32; font-size:20px; line-height:1.5em}
+.landing-harvest-catalogue-btn {display:flex; margin:20px 0 0 0; justify-content:center}
+.landing-harvest-catalogue-btn span {padding:15px 20px; font-size:18px; line-height:1em; color:#FFFFFF; text-decoration:none; background:#0180C9; border-radius:5px; transition:background 0.2s}
+@media (min-width:1220px) {
+    .landing-harvest-catalogue-item:hover .landing-harvest-catalogue-btn span {background:#003B61}
+}
+.landing-harvest-catalogue-list .swiper-button-prev,
+.landing-harvest-catalogue-list .swiper-button-next {position:absolute; display:block; z-index:2; top:50%; width:36px; height:36px; border:none; border-radius:0; margin:-18px 0 0 0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:none; transform:none; opacity:1}
+.landing-harvest-catalogue-list .swiper-button-prev::after,
+.landing-harvest-catalogue-list .swiper-button-next::after {display:none}
+.landing-harvest-catalogue-list .swiper-button-prev {left:-46px}
+.landing-harvest-catalogue-list .swiper-button-next {right:-46px}
+.landing-harvest-catalogue-list .swiper-button-prev svg,
+.landing-harvest-catalogue-list .swiper-button-next svg {display:block; width:36px; height:36px; fill:#0180C9; transition:fill 0.2s}
+@media (min-width:1220px) {
+    .landing-harvest-catalogue-list .swiper-button-prev:hover svg,
+    .landing-harvest-catalogue-list .swiper-button-next:hover svg {fill:#003B61}
+}
+
+.landing-harvest-catalogue-list .swiper-pagination.swiper-pagination-horizontal {display:flex; position:absolute; margin:0; width:auto; left:50%; top:auto; right:auto; bottom:-52px; align-items:center; justify-content:flex-start}
+.landing-harvest-catalogue-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet {display:block; min-width:42px; max-width:42px; height:12px; background:transparent; opacity:1; margin:0; border-radius:0; cursor:pointer; position:relative}
+.landing-harvest-catalogue-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet::before {content:""; position:absolute; left:50%; top:0; margin:0 0 0 -6px; width:12px; height:12px; background:rgba(117, 172, 200, 0.5); border-radius:50%; transform:scale(0.5); transition:transform 0.8s, background 0.8s}
+.landing-harvest-catalogue-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet-active::before {background:#0180C9; transform:scale(1)}
+.landing-harvest-catalogue-list .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {transform:scale(1)}
+
+@media (max-width:1219px) {
+    .landing-harvest-catalogue-beko {width:70px; margin:0 auto 20px auto}
+    .landing-harvest-catalogue-list {margin:20px auto 0 auto; max-width:260px}
+    .landing-harvest-catalogue-list .swiper-slide {min-width:0; max-width:none}
+    .landing-harvest-catalogue-item {margin:0; padding:10px}
+    .landing-harvest-catalogue-preview {height:240px}
+    .landing-harvest-catalogue-title {font-size:16px}
+    .landing-harvest-catalogue-title br {display:none}
+    .landing-harvest-catalogue-btn {display:block; margin:10px 0 0 0}
+    .landing-harvest-catalogue-btn span {display:block; text-align:center}
+    .landing-harvest-catalogue-ctrl {margin:10px 0 0 0; display:flex; align-items:center; justify-content:space-between}
+    .landing-harvest-catalogue-list .swiper-button-prev,
+    .landing-harvest-catalogue-list .swiper-button-next {min-width:30px; max-width:30px; width:30px; height:30px; position:relative; top:auto; margin:0}
+    .landing-harvest-catalogue-list .swiper-button-prev {left:auto}
+    .landing-harvest-catalogue-list .swiper-button-next {right:auto}
+    .landing-harvest-catalogue-list .swiper-button-prev svg,
+    .landing-harvest-catalogue-list .swiper-button-next svg {width:30px; height:30px}
+    .landing-harvest-catalogue-list .swiper-pagination-fraction,
+    .landing-harvest-catalogue-list .swiper-pagination.swiper-pagination-horizontal {position:relative; left:auto; right:auto; width:auto !important; bottom:auto; top:auto; color:rgba(255, 255, 255, 0.4); justify-content:center; font-size:16px; line-height:1.4em}
+    .landing-harvest-catalogue-list .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+    .landing-harvest-catalogue-list .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {left:auto; transform:none}
+    .landing-harvest-catalogue-list .swiper-pagination-current {font-size:24px; color:rgba(255, 255, 255, 0.8)}
+}
+
+.landing-harvest-notice {margin:172px 0 0 0; border-top:1px solid rgba(255, 255, 255, 0.1); padding:20px 0 0 0; font-weight:300; font-size:16px; line-height:1.4em; color:rgba(255, 255, 255, 0.75)}
+.landing-harvest-notice-item {margin:20px 0 0 0; display:flex}
+.landing-harvest-notice-item:first-child {margin:0}
+.landing-harvest-notice-item span {margin:0 20px 0 0}
+
+@media (max-width:1219px) {
+    .landing-harvest-notice {margin:80px 0 0 0; font-size:14px}
+}
