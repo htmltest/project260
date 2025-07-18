@@ -77,13 +77,8 @@
     .landing-harvest-about-video-play svg {width:100px; height:100px}
 }
 
-.landing-harvest-how-desktop {height:400vh}
-.landing-harvest-how-desktop-inner {position:relative; height:642px}
-.landing-harvest-how-desktop.fixed .landing-harvest-how-desktop-inner {position:fixed; left:50%; top:0; width:1220px; margin:0 0 0 -610px}
-.scrolled .landing-harvest-how-desktop.fixed .landing-harvest-how-desktop-inner {top:144px}
-.landing-harvest-how-desktop-container {margin:40px 0 0 0; height:520px; background:#02182D; border:1px solid rgba(255, 255, 255, 0.1); border-radius:16px; overflow:hidden; position:relative; text-align:center}
-.landing-harvest-how-desktop-item {position:absolute; left:0; top:0; right:0; bottom:0; transition:opacity 1s; opacity:0}
-.landing-harvest-how-desktop-item.active {opacity:1}
+.landing-harvest-how-list {margin:40px 0 0 0; position:relative; background:#02182D; border:1px solid rgba(255, 255, 255, 0.1); border-radius:16px}
+.landing-harvest-how-desktop-item {height:520px; position:relative; text-align:center}
 .landing-harvest-how-desktop-item-bg {position:absolute; left:50%; top:179px; width:914px; margin:0 0 0 -457px}
 .landing-harvest-how-desktop-item-bg img {display:block; width:100%}
 .landing-harvest-how-desktop-item-title {position:relative; font-size:30px; line-height:1.3em; display:flex; align-items:center; justify-content:center}
@@ -94,17 +89,28 @@
 .landing-harvest-how-desktop-morning {background:rgba(1, 128, 201, 0.2); color:#0180C9; padding:20px 0 0 0}
 .landing-harvest-how-desktop-afternoon {background:rgba(4, 211, 129, 0.2); color:#039255; padding:20px 0 0 0}
 .landing-harvest-how-desktop-evening {background:rgba(212, 18, 0, 0.2); color:#D41200; padding:20px 0 0 0}
-.landing-harvest-how-mobile {display:none}
+.landing-harvest-how-mobile-item {display:none}
+.landing-harvest-how-list .swiper-button-prev,
+.landing-harvest-how-list .swiper-button-next {position:absolute; display:block; z-index:2; top:50%; width:36px; height:36px; border:none; border-radius:0; margin:-18px 0 0 0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:none; transform:none; opacity:1}
+.landing-harvest-how-list .swiper-button-prev::after,
+.landing-harvest-how-list .swiper-button-next::after {display:none}
+.landing-harvest-how-list .swiper-button-prev {left:-46px}
+.landing-harvest-how-list .swiper-button-next {right:-46px}
+.landing-harvest-how-list .swiper-button-prev svg,
+.landing-harvest-how-list .swiper-button-next svg {display:block; width:36px; height:36px; fill:#0180C9; transition:fill 0.2s}
+@media (min-width:1220px) {
+    .landing-harvest-how-list .swiper-button-prev:hover svg,
+    .landing-harvest-how-list .swiper-button-next:hover svg {fill:#003B61}
+}
+.landing-harvest-how-list .swiper-pagination.swiper-pagination-horizontal {display:flex; position:absolute; margin:0; width:auto; left:0; top:auto; right:0; bottom:-52px; align-items:center; justify-content:center}
+.landing-harvest-how-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet {display:block; min-width:42px; max-width:42px; height:12px; background:transparent; opacity:1; margin:0; border-radius:0; cursor:pointer; position:relative}
+.landing-harvest-how-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet::before {content:""; position:absolute; left:50%; top:0; margin:0 0 0 -6px; width:12px; height:12px; background:rgba(117, 172, 200, 0.5); border-radius:50%; transform:scale(0.5); transition:transform 0.8s, background 0.8s}
+.landing-harvest-how-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet-active::before {background:#0180C9; transform:scale(1)}
 
 @media (max-width:1219px) {
-    .landing-harvest-how-desktop {display:none}
-    .landing-harvest-how-mobile {display:block; height:800vh; position:relative}
-    #landing-harvest-how .landing-harvest-how-mobile .landing-harvest-title {display:block; position:absolute; left:50%; top:20px; width:300px; margin:0 0 0 -150px; pointer-events:none; z-index:2}
-    .landing-harvest-how-mobile-inner {position:relative; height:100vh}
-    .landing-harvest-how-mobile.fixed .landing-harvest-how-mobile-inner {position:fixed; left:0; top:0; right:0}
-    .scrolled .landing-harvest-how-mobile.fixed .landing-harvest-how-mobile-inner {top:144px}
-    .landing-harvest-how-mobile-item {position:absolute; left:0; top:0; right:0; height:100vh; padding:112px 10px 0 10px; color:#FFFFFF; text-align:center; opacity:0; transition:opacity 1s, transform 1s; transform:translateY(100vh)}
-    .landing-harvest-how-mobile-item.active {opacity:1; transform:translateY(0)}
+    .landing-harvest-how-list {margin:20px 0 0 0; background:none; border:none; border-radius:0}
+    .landing-harvest-how-desktop-item {display:none}
+    .landing-harvest-how-mobile-item {display:block; color:#FFFFFF; text-align:center; padding:20px 0}
     .landing-harvest-how-mobile-item-morning {background:#033050}
     .landing-harvest-how-mobile-item-afternoon {background:#194232}
     .landing-harvest-how-mobile-item-evening {background:#421B18}
@@ -124,6 +130,18 @@
     .landing-harvest-how-cursor img {display:block; width:100%}
     .landing-harvest-how-mobile-step {position:absolute; bottom:120px; left:0; right:0; color:rgba(255, 255, 255, 0.4); font-size:16px; line-height:1.4em; text-align:center}
     .landing-harvest-how-mobile-step span {font-size:24px; color:rgba(255, 255, 255, 0.8)}
+    .landing-harvest-how-ctrl {margin:10px 0 0 0; display:flex; align-items:center; justify-content:space-between}
+    .landing-harvest-how-list .swiper-button-prev,
+    .landing-harvest-how-list .swiper-button-next {min-width:30px; max-width:30px; width:30px; height:30px; position:relative; top:auto; margin:0}
+    .landing-harvest-how-list .swiper-button-prev {left:auto}
+    .landing-harvest-how-list .swiper-button-next {right:auto}
+    .landing-harvest-how-list .swiper-button-prev svg,
+    .landing-harvest-how-list .swiper-button-next svg {width:30px; height:30px}
+    .landing-harvest-how-list .swiper-pagination-fraction,
+    .landing-harvest-how-list .swiper-pagination.swiper-pagination-horizontal {position:relative; left:auto; right:auto; width:auto !important; bottom:auto; top:auto; color:rgba(255, 255, 255, 0.4); justify-content:center; font-size:16px; line-height:1.4em}
+    .landing-harvest-how-list .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+    .landing-harvest-how-list .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {left:auto; transform:none}
+    .landing-harvest-how-list .swiper-pagination-current {font-size:24px; color:rgba(255, 255, 255, 0.8)}
 }
 
 #landing-harvest-lifestyle {position:relative}
